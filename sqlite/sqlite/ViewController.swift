@@ -8,7 +8,7 @@
 
 import UIKit
 import SQLite3
-import SkeletonView
+
 struct apimodel {
     var name : String?
     var surname : String?
@@ -27,7 +27,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet var txtSurname: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableViewStudents.showAnimatedGradientSkeleton()
+      //  tableViewStudents.showAnimatedGradientSkeleton()
         openDatabaseFile()
         createTable()
         // Do any additional setup after loading the view.
